@@ -129,3 +129,100 @@
     }
 }
 
+/* Esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: sqmoveTop 2s linear;
+}
+
+@keyframes sqmoveTop {
+    0% {
+        left: 10%
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: sqmoveBottom 2s linear;
+}
+
+@keyframes sqmoveBottom {
+    0% {
+        right: 20%
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+/* Esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: sqmoveTopCompleto 2s linear;
+}
+
+@keyframes sqmoveTopCompleto {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 50px;
+    }
+    75% {
+        left: -10px;
+        top: 50px;
+    }
+    90% {
+        left: 0;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: sqmoveBottomCompleto 2s linear;
+}
+
+@keyframes sqmoveBottomCompleto {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 50px;
+    }
+    70% {
+        right: -10px;
+        bottom: 50px;
+    }
+    90% {
+        right: -10px;
+        bottom: -10px;
+    }
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
+}
